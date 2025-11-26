@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internships</title>
+  <link rel="stylesheet" href="{% static 'css/internship.css' %}">
+  <style>
+    button,a {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  left: 150px;
+
+}
+button:hover {
+  background-color: #0f766e;
+}
+  </style>
+</head>
+<body>
+  <div class="internship-container">
+    <h1>My Internships</h1>
+
+    <div class="internship">
+      <h2>1) Bharat Electronics Limited (BEL)</h2>
+      <p><strong>Duration:</strong> 2 Months</p>
+      <p>Worked on a project implementing a <strong>Zeroise Function</strong> to delete and update sensitive database entries. Technologies used include <strong>Java</strong> and <strong>PostgreSQL</strong>. Focused on secure data handling and backend logic refinement.</p>
+    </div>
+
+    <div class="internship">
+      <h2>2) Web Development - TestYantra Solutions</h2>
+      <p><strong>Duration:</strong> Internship Program for 4 months</p>
+      <p>Contributed to the frontend and backend development of web applications using modern web technologies. Learned to integrate client requirements into responsive designs and functional backend services.</p>
+    </div>
+
+    <div class="internship">
+      <h2>3) IT Department Familiarization - Hindustan Aeronautics Limited</h2>
+      <p><strong>Duration:</strong> Familiarization Program for 1 month</p>
+      <p>Gained insight into the working of the IT department at Hindustan Aeronautics Limited. Learned about enterprise-level system architecture, internal data flow, and infrastructure management practices.</p>
+    </div>
+  </div>
+  <a href="{% url 'home' %}"><button>Back to Home</button></a>
+</body>
+</html>

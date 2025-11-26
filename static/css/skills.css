@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.3s ease;
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background: #38bdf8;
+    color: white;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    color: #1f2937;
+}
+
+/* Navigation / Sidebar */
+.my {
+    background-color: #0f172a;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.my p {
+    margin: 0;
+}
+
+.my a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.my a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* Intro Text */
+.intro {
+    margin-left: 220px;
+    padding: 80px 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0f172a;
+    text-align: left;
+}
+
+/* Profile Image */
+.img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    bottom: 450px;
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+/* Clear floats if needed */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+Remove unneeded table elements
+td, th {
+    border: none;
+    padding: 0;
+}

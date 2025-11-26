@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <table>
+        <div class="my">
+        <p><a href="{% url 'home' %}">My portfolio</a></p>
+        <p><a href="{% url 'info' %}">about</a></p>
+        <p><a href="{% url 'skil' %}">Skills</a></p>
+        <p><a href="{% url 'project' %}">Projects</a></p>
+        <p><a href="{% url 'internship' %}">Internships</a></p>
+        <p><a href="{% url 'contact' %}">Contact</a></p>
+        
+        
+    </div>
+      
+        <div class="intro">
+            <p>.Web Developer</p>
+        </div>
+            <td>
+                <img src="{% static 'img/IMG_3448.JPG' %}" class="img" alt="" height="250px" width="250px">
+           </td>
+
+        </th>
+    </table>
+
+</body>
+</html>
